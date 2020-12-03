@@ -1,0 +1,7 @@
+Minimum RTO for a single AZ outage: From AWS documentation, RTO for a single AZ instance is 99,5%. Estimated 3 hours of RT0.
+
+Minimum RTO for a single region outage: From AWS documentation, RTO for a single region is 99,5%. Estimated 3 hours of RT0.
+
+Minimum RPO for a single AZ outage: From AWS documentation, RPO time might be longer, resulting in 99,3%. Estimated 5 hours of RP0.
+
+Minimum RPO for a single region outage: From AWS documentation, RPO for a single region instance is 99,3%. Estimated 5 hours of RP0.

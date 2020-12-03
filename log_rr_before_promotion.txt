@@ -1,0 +1,30 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| udacity            |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> use udacity;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> SELECT * FROM user;
++--------+-----------+
+| name   | last_name |
++--------+-----------+
+| Victor | Garcia    |
++--------+-----------+
+1 row in set (0.00 sec)
+
+mysql> CREATE TABLE test ( test VARCHAR(20));
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+mysql> INSERT INTO user VALUE ('test', 'test');
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+mysql> INSERT INTO user VALUES ('test', 'test');
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
